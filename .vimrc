@@ -163,10 +163,10 @@ set tags=tags;/
 set virtualedit=block
 set wrap
 set nu
-set spell spelllang=en_us
+set spelllang=en_us
 set colorcolumn=80
 syntax on
-colorscheme slate 
+colorscheme slate
 
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
 highlight   CursorLine    term=NONE    cterm=bold ctermbg=8
@@ -222,3 +222,10 @@ inoremap <Up> <C-o>gk
 
 map <F5> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+nnoremap <F3> :set spell<CR>
+nnoremap <F4> :set nospell<CR>
+
+
